@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Host Page</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.1/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <h1>Upload Model and Marker</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <label for="model">3D Model:</label>
+      <input type="file" id="model" name="model" accept=".gltf, .glb" required>
+      <br><br>
+      <label for="marker">Marker Image:</label>
+      <input type="file" id="marker" name="marker" accept="image/*" required>
+      <br><br>
+      <button type="submit">Upload</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

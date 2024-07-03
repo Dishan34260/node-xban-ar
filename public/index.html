@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Page</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.1/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <button onclick="startAR()">Start AR</button>
+    <div id="ar-scene" style="display: none;">
+      <a-scene embedded arjs>
+        <a-marker id="marker1" type="pattern" url="">
+          <a-entity id="model1" scale="0.5 0.5 0.5"></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
